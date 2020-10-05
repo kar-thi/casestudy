@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link rel="stylesheet" href="app.css">
     <title>apptomate: UI/UX Design, AI &amp; Machine Learning Development, DevOps Consulting, IoT App Development Company in India, USA, Germany &#8211; Global IT / Software Consulting &amp; Management Company in India, USA, Germany offers UI/UX design services,
         AI &amp; Machine learning development, RPA, DevOps consulting, IoT app development, mobile app development, web application development, eCommerce development services and more. For further business inquiries and clarifications, feel free to contact
@@ -14,120 +16,204 @@
     </title>
 </head>
 
-<body class="body-4">
-    <div class="ui-hero-wrapper">
-        <div class="ui-hero">
-            <div class="ui-intro">
-                <h1 style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="ui-intro-heading">Ml Algorithm and Face Recognition for Employee Attendance System</h1>
-                <p style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="ui-intro-text">ML</p>
-
-            </div>
-            <img src="https://uploads-ssl.webflow.com/589e1c0426e3bc615f4961c1/5ef904e3ff9bfdbcbe75e9fd_arrow.svg" style="opacity: 1;transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
-                alt="" class="image-21">
-
-        </div>
-        <div style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;background-image: url(images/ml-bg.jpg) !important;" class="ui-hero-bg"></div>
-    </div>
-    <div class="ui-body">
-
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Problem Statement</h1>
-            <div class="ui-body-text">Streamlining the attendance across your organization becomes one of the major focus for managers and employees to plan work and allocation better, and for HR staff to run payroll seamlessly. Anyways, for the start-up companies, It is quite
-                not possible to have enhanced attendance devices and applications to manage the employee shift timings. In the market, low-cost biometric devices are available, but most of the devices involve the manual transfer of data from the devices
-                to our system in excel/CSV format for further analysis; Syncing the data may not be so instant. To overcome the problems like a high investment on attendance devices and not having an enhanced system for low cost, we have proposed a sophisticated
-                solution, in which we will be marking the attendance in a mobile app with having the base of machine learning model and face recognition concepts. On top of that, the Geofencing layer is added to the mobile application which will keep
-                track of the location where employee Check-in/out.
-            </div>
-        </div>
+<body>
 
 
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Technical Solution</h1>
-            <div class="ui-body-text">Here we have proposed a technical solution, which takes the advantage of Machine Learning algorithms with face recognition for validating the user to mark attendance. On the other hand, to remove the external attendance device cost, we have
-                proposed to use an employee’s mobile device with an app installed to mark the attendance. The solution components are explained below.</div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://www.apptomate.co/wp-content/uploads/2020/09/final-2-2.png" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Machine Learning Model</h1>
-
-            <div class="ui-body-text">All we intended to do is to classify the employees with identifying their faces, which will be the replacement of biometric validation of the fingerprints. Image Classification with K Nearest Neighbours shall be chosen as the machine learning
-                algorithm to perform the classification. K-Nearest Neighbours (k-NN) is a supervised machine learning algorithm i.e. it learns from a labeled training set by taking in the training data X along with its labels y and learns to map the input
-                X to it’s desired output y. In our case, employee images/video frames will be the training data for the machine learning model. We will be creating a folder for each employee which is the classification criteria. The trained model can
-                be later used for performing the prediction.</div>
-        </div>
-        <div class="ui-body-image"><img src="images/ml2.png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, 95vw" style="opacity: 1;" alt="" class="image-22">
-        </div>
-
-
-
-
-
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Flask API</h1>
-            <div class="ui-body-text">
-                The Machine Learning model developed in Python programming will be exposed as API methods – train and detect. The training method is to initiate the training of the model when you add new employees and the detection method is to perform the prediction
-                of an employee, that accepts an image as an input parameter.
-            </div>
-        </div>
-        <div class="ui-body-image"><img src="images/ml3.png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, 95vw" style="opacity: 1;" alt="" class="image-22">
-        </div>
-
-
-
-
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">FlaDatabase and Data Service API</h1>
-            <div class="ui-body-text">The data service layer is to handle the CRUD operation for performing the check-in/out operation for the employees. It will also have methods to list the users with the attendance report, that shall be used for reporting purposes. Any transactional
-                database will be acting as a back-end layer to hold the entries.
-            </div>
-
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TECHNOLOGY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INDUSTRIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
 
         </div>
+    </nav>
 
-
-
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Mobile App</h1>
-            <div class="ui-body-text">The mobile application is where the user performs the Check-in/out operation. We will be having a user interface, in which the user needs to select the check-in menu for logging in and select the checkout menu to log out. The app consumes
-                the Flask API method for user employee face verification and Data Service API methods to make an entry for clock-in and clock-out.</div>
-        </div>
-
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Validation in the mobile App</h1>
-            <div class="ui-body-text">Geofencing validation is required to ensure the employee is within the premises when they do Checkin/out. Due to the flexibility of manual changes to device clock time, we have to use true-time API/plug-in to calculate the actual time of the
-                geolocation, instead of taking the mobile device time as a log-in time. To ensure, the employees are showing their real face in the phone camera, and not showing the taken photo to bypass the validation, the Deep Convolutional Neural Network
-                can be used to differentiating between real live streaming video/image and a photo with a face.</div>
-        </div>
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text">Admin Dashboard</h1>
-            <div class="ui-body-text">A Dashboard needs to be built, which shows the consolidated report on the employee’s availability and provide a detailed report specific to an employee.</div>
-        </div>
+    <div class="jumbotron" style="background-image: url('images/ml-bg.jpg');background-position: center;">
+        <h1 class="display-4">Bomb Blast or Gun Fire Alert System using IoT and Machine Learning</h1>
 
     </div>
 
-    <div style="background-color: rgb(0, 0, 0);" class="ui-kickstarter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 container-top">
+                <div class="content-inner">
+                    <h3>Problem Statement</h3>
+                    <p>Streamlining the attendance across your organization becomes one of the major focus for managers and employees to plan work and allocation better, and for HR staff to run payroll seamlessly. Anyways, for the start-up companies, It
+                        is quite not possible to have enhanced attendance devices and applications to manage the employee shift timings. In the market, low-cost biometric devices are available, but most of the devices involve the manual transfer of data
+                        from the devices to our system in excel/CSV format for further analysis; Syncing the data may not be so instant. To overcome the problems like a high investment on attendance devices and not having an enhanced system for low cost,
+                        we have proposed a sophisticated solution, in which we will be marking the attendance in a mobile app with having the base of machine learning model and face recognition concepts. On top of that, the Geofencing layer is added to
+                        the mobile application which will keep track of the location where employee Check-in/out.</p>
+                </div>
 
-        <div class="ui-body-inner">
-            <h1 class="ui-body-text-large ui-body-text text-white">Result</h1>
-            <div class="ui-body-text text-white">With the proposed solution, we can accomplish an enhanced employee attendance system with no major costs. All we need to spend is for the cloud environment to deploy our application. On the other hand, The application can be enhanced to include
-                Customized attendance policies in the application feature.
+                <div class="content-inner">
+                    <h3>Technical Solution</h3>
+                    <p>Here we have proposed a technical solution, which takes the advantage of Machine Learning algorithms with face recognition for validating the user to mark attendance. On the other hand, to remove the external attendance device cost,
+                        we have proposed to use an employee’s mobile device with an app installed to mark the attendance. The solution components are explained below.</p>
+                </div>
+
+                <div class="content-inner">
+                    <h3>Machine Learning Model</h3>
+                    <p>All we intended to do is to classify the employees with identifying their faces, which will be the replacement of biometric validation of the fingerprints. Image Classification with K Nearest Neighbours shall be chosen as the machine
+                        learning algorithm to perform the classification. K-Nearest Neighbours (k-NN) is a supervised machine learning algorithm i.e. it learns from a labeled training set by taking in the training data X along with its labels y and learns
+                        to map the input X to it’s desired output y. In our case, employee images/video frames will be the training data for the machine learning model. We will be creating a folder for each employee which is the classification criteria.
+                        The trained model can be later used for performing the prediction.</p>
+                </div>
+
+                <div class="content-inner">
+                    <h3>Flask API</h3>
+                    <p>The Machine Learning model developed in Python programming will be exposed as API methods – train and detect. The training method is to initiate the training of the model when you add new employees and the detection method is to perform
+                        the prediction of an employee, that accepts an image as an input parameter.</p>
+
+                </div>
+                <div class="content-inner">
+                    <h3>FlaDatabase and Data Service API</h3>
+                    <p>The data service layer is to handle the CRUD operation for performing the check-in/out operation for the employees. It will also have methods to list the users with the attendance report, that shall be used for reporting purposes.
+                        Any transactional database will be acting as a back-end layer to hold the entries.</p>
+
+                </div>
+
+                <div class="content-inner">
+                    <h3>Mobile App</h3>
+                    <p>The mobile application is where the user performs the Check-in/out operation. We will be having a user interface, in which the user needs to select the check-in menu for logging in and select the checkout menu to log out. The app consumes
+                        the Flask API method for user employee face verification and Data Service API methods to make an entry for clock-in and clock-out.</p>
+                </div>
+
+                <div class="content-inner">
+                    <h3>Validation in the mobile App</h3>
+                    <p>Geofencing validation is required to ensure the employee is within the premises when they do Checkin/out. Due to the flexibility of manual changes to device clock time, we have to use true-time API/plug-in to calculate the actual time
+                        of the geolocation, instead of taking the mobile device time as a log-in time. To ensure, the employees are showing their real face in the phone camera, and not showing the taken photo to bypass the validation, the Deep Convolutional
+                        Neural Network can be used to differentiating between real live streaming video/image and a photo with a face.</p>
+                </div>
+                <div class="content-inner">
+                    <h3>Admin Dashboard</h3>
+                    <p>A Dashboard needs to be built, which shows the consolidated report on the employee’s availability and provide a detailed report specific to an employee.</p>
+                </div>
+
+                <div class="content-inner">
+                    <h3>Result</h3>
+                    <p>With the proposed solution, we can accomplish an enhanced employee attendance system with no major costs. All we need to spend is for the cloud environment to deploy our application. On the other hand, The application can be enhanced
+                        to include Customized attendance policies in the application feature.</p>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-4 content-right">
+                <h4>Related Tags</h4>
+                <span class="badge badge-dark"><a>IOT</a></span>
+                <span class="badge badge-dark"><a>Security</a></span>
+                <span class="badge badge-dark"><a>Machine Learning</a></span>
+                <span class="badge badge-dark"><a>Chat Bot</a></span>
+
+                <div class="mt-5">
+                    <h4>Download Case study</h4>
+                    <button type="button" class="btn btn-dark btn-md btn-block">Click here to download</button>
+                </div>
+
+                <div class="mt-5">
+                    <h4>Related Case</h4>
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/ml-bg.jpg" class="d-block w-100" alt="...">
+                                <div class="related-case">
+                                    <h4>Ml Algorithm and Face Recognition for Employee Attendance System</h4>
+                                    <span class="badge badge-dark"><a href="#">Read more...</a></span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/bot-bg.jpg" class="d-block w-100" alt="...">
+                                <div class="related-case">
+                                    <h4>CUSBot voice enabled virtual waiter</h4>
+                                    <span class="badge badge-dark"><a href="#">Read more...</a></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div style="width: fit-content;margin-left: auto;position: relative;top: -3rem;">
+                            <a class="carousel-btn" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M25.1 247.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L64.7 256l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L25 264.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
+                            </a>
+                            <a class="carousel-btn" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M166.9 264.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L127.3 256 25.1 155.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
-
-        <h1 class="ui-kickstarter-heading ui-kickstarter-heading-link">Thank you</h1>
-        <p class="ui-kickstarter-subheading text-center">I’d like to take this opportunity to thank eveyone who has supported this project so far and to all future backers.</p>
-
     </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=589e1c0426e3bc615f4961c1" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://uploads-ssl.webflow.com/589e1c0426e3bc615f4961c1/js/webflow.a05fb12d2.js" type="text/javascript"></script>
-    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/apptomate-white.png" class="w-50" />
+                    <address class="mt-5">
+                        <a style="color: #9e9e9e;" href="mailto:hello@apptomate.co" target="_blank" rel="noopener noreferrer">Email : hello@apptomate.co </a> <br>
+                                </address>
+                </div>
+                <div class="col-md-4">
+                    <h4>San Pablo, United States</h4>
+                    <address>
+    3260 Blume Dr<br>
+    #141,
+San Pablo,
+CA 94806,<br>
+    United States<br>
+<a style="color: #9e9e9e;" href="tel:+1(415) 691-6151" target="_blank" rel="noopener noreferrer">+1 (415) 691 6151</a>
+    </address>
 
+                </div>
+                <div class="col-md-4">
+                    <h4>New York, United States</h4>
+                    <address>
+                        244 Madison Avenue<br>
+                       #1059, New York,
+                       NY 10016,<br>
+                        United States<br>
+                           <a style="color: #9e9e9e;" href="tel:+1(718) 717 8088" target="_blank" rel="noopener noreferrer">+1(718) 717 8088</a>
+                               </address>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
