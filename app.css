@@ -152,8 +152,8 @@ h3 {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2.5rem;
-    padding-left: .5rem;
+    padding-right: 0;
+    padding-left: 2rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -163,21 +163,46 @@ h3 {
     font-family: 'Raleway', sans-serif;
 }
 
-footer {
-    background: #000;
-    color: #fff !important;
-    padding: 4rem 0;
+.footer-area.footer-dark {
+    background-color: #121212;
 }
 
-footer h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.footer-area {
+    background-color: #f4f6f7;
+    padding: 1rem 0;
 }
 
-footer address {
-    margin-bottom: 1rem;
-    font-style: normal;
-    line-height: 30px;
-    color: #9e9e9e;
+.footer-area .social li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-area.footer-dark .social li a {
+    color: #fff;
+}
+
+.footer-area .social li a {
+    font-size: 24px;
+    color: #6c6c6c;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.social svg {
+    fill: #fff;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.footer-area.footer-dark .social li a {
+    color: #fff;
+}
+
+.copyright p {
+    color: #fff;
 }
