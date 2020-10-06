@@ -24,99 +24,99 @@
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/apptomate-white.png" style="width: 190px;" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</span></a>
+                        <a class="nav-link" href="https://www.apptomate.co/about-us/">ABOUT US</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TECHNOLOGY</a>
+                        <a class="nav-link" href="https://www.apptomate.co/technology/">TECHNOLOGY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">INDUSTRIES</a>
+                        <a class="nav-link" href="https://www.apptomate.co/industries/">INDUSTRIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFOLIO</a>
+                        <a class="nav-link" href="https://www.apptomate.co/about-us/">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CAREERS</a>
+                        <a class="nav-link" href="https://www.apptomate.co/careers/">CAREERS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="https://www.apptomate.co/contact/">CONTACT US</a>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
-    <div class="jumbotron" style="background-image: url('images/iot-bg.jpg');">
-        <h1 class="display-4" data-aos="fade-left">Bomb Blast or Gun Fire Alert System using IoT and Machine Learning</h1>
+    <div class="jumbotron" style="background-image: url('images/ml-bg.jpg');background-position: center;">
+        <h1 class="display-4">Bomb Blast or Gun Fire Alert System using IoT and Machine Learning</h1>
 
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-8 container-top">
-                <div class="content-inner" data-aos="fade-up">
+                <div class="content-inner">
                     <h3>Problem Statement</h3>
-                    <p>The responsibility of providing enhanced solutions to ensure public safety has become significant throughout the world. Many instances are getting filed on the bomb blast, gun fires, etc, especially in public places like schools, shopping
-                        malls, etc. In real-time, alerting the police or corresponding department in case of Bomb Blast or Gun Fire is not very instant which in turn impacts the time taken for performing the countermeasure activities. The recorded cases
-                        say, It is actually taking huge time for someone in the zone to reach out to the police for intimating, which should be actually avoided. Considering the public safety in mind, I have published this article which provides the solution
-                        by alerting the concern team/person with the help of IoT and machine learning concepts in an instant manner.
-                    </p>
+                    <p>Streamlining the attendance across your organization becomes one of the major focus for managers and employees to plan work and allocation better, and for HR staff to run payroll seamlessly. Anyways, for the start-up companies, It
+                        is quite not possible to have enhanced attendance devices and applications to manage the employee shift timings. In the market, low-cost biometric devices are available, but most of the devices involve the manual transfer of data
+                        from the devices to our system in excel/CSV format for further analysis; Syncing the data may not be so instant. To overcome the problems like a high investment on attendance devices and not having an enhanced system for low cost,
+                        we have proposed a sophisticated solution, in which we will be marking the attendance in a mobile app with having the base of machine learning model and face recognition concepts. On top of that, the Geofencing layer is added to
+                        the mobile application which will keep track of the location where employee Check-in/out.</p>
                 </div>
 
-                <div class="content-inner" data-aos="fade-up">
+                <div class="content-inner">
                     <h3>Technical Solution</h3>
-                    <p>Here I have proposed a hybrid solution that works with the combination of IoT devkit and Machine learning algorithms to ensure we develop the enhanced alert system for public safety. On top of that, given a brief of using a machine
-                        learning algorithm for video surveillance to ensure the safeness.</p>
+                    <p>Here we have proposed a technical solution, which takes the advantage of Machine Learning algorithms with face recognition for validating the user to mark attendance. On the other hand, to remove the external attendance device cost,
+                        we have proposed to use an employee’s mobile device with an app installed to mark the attendance. The solution components are explained below.</p>
                 </div>
 
-                <div class="content-inner" data-aos="fade-up">
-                    <h3>IoT with Machine Learning Solution</h3>
-                    <p>Internet of Things(IoT) is a device connected to the Internet with the ability to collect and exchange data from users or environments with no human intervention. IoT allows objects to be sensed and controlled remotely across existing
-                        network infrastructure, creating opportunities for more direct integration between the physical world and computer-based systems. In our solution, we have chosen the MXChip IoT DevKit, which can be used to develop and prototype
-                        Internet of Things (IoT) solutions leveraging Microsoft Azure services. It includes an Arduino compatible board with rich peripherals and sensors
-                    </p>
-
-                    <p>The IoT DevKit MXChip is enabled with a microphone which shall be used to calculate the noise level in the environment. AudioClassV2 class in the C++ program has to be installed in the IoT device to read the noise level and to do the
-                        necessary action. The IoT kit needs to be configured to read the sound decibel levels on a regular basis and the recorded values have to be stored in a database so that we can come to a conclusion on the sound levels recorded in
-                        the particular area by analyzing the average decibels recorded.</p>
-                    <p>With the above step, we calculate the threshold value on the sound decibels that can be set for a particular location. At any point, if the decibel sound level is surpassing the threshold value, then the device data will be shared
-                        with the Azure IoT Hub as an intimation message.</p>
-
-                    <p>At this stage, the Azure Event Grid and App Logic comes into the picture, which enables you to react to events in IoT Hub by triggering actions in your downstream applications. Our end goal is to create an alert system, which sends
-                        an email/SMS/call to the concerned team on any abnormal activities. The app logic will have the code logic to check for the level of decibel values and create an action to email using SendGrid or Outlook. The event needs to be
-                        subscribed to by the IoT Hub so that the event will be triggered on any abnormal activity identified in the IoT devices connected with the Hub.</p>
+                <div class="content-inner">
+                    <h3>Machine Learning Model</h3>
+                    <p>All we intended to do is to classify the employees with identifying their faces, which will be the replacement of biometric validation of the fingerprints. Image Classification with K Nearest Neighbours shall be chosen as the machine
+                        learning algorithm to perform the classification. K-Nearest Neighbours (k-NN) is a supervised machine learning algorithm i.e. it learns from a labeled training set by taking in the training data X along with its labels y and learns
+                        to map the input X to it’s desired output y. In our case, employee images/video frames will be the training data for the machine learning model. We will be creating a folder for each employee which is the classification criteria.
+                        The trained model can be later used for performing the prediction.</p>
                 </div>
 
-                <div class="content-inner" data-aos="fade-up">
-                    <h3>Maximized Solution</h3>
-                    <p>Creating an alert system, with just measuring the decibel levels won’t be an ideal solution all the time, as sometimes due to other environmental factors the sound level may increase or decrease. So involving stream analytics with
-                        a machine learning model, helps us to perform the prediction which considers different factors for making the decision of the sound volume and raises the alert only in the case of abnormal activity.</p>
-                    <img src="images/iot2.jpg" class="mb-5" />
+                <div class="content-inner">
+                    <h3>Flask API</h3>
+                    <p>The Machine Learning model developed in Python programming will be exposed as API methods – train and detect. The training method is to initiate the training of the model when you add new employees and the detection method is to perform
+                        the prediction of an employee, that accepts an image as an input parameter.</p>
+
+                </div>
+                <div class="content-inner">
+                    <h3>FlaDatabase and Data Service API</h3>
+                    <p>The data service layer is to handle the CRUD operation for performing the check-in/out operation for the employees. It will also have methods to list the users with the attendance report, that shall be used for reporting purposes.
+                        Any transactional database will be acting as a back-end layer to hold the entries.</p>
 
                 </div>
 
-
-                <div class="content-inner" data-aos="fade-up">
-                    <h3>Video Surveillance Alert System Using Machine Learning Solution:</h3>
-                    <p>CTo identify the abnormal activities in the video frames, it requires to relate the video frames in the past and the current to predict for the unprecedented activities in the video frame. Considering the nature of the required machine
-                        learning model, Long Short-Term Memory (LSTM) shall be chosen for implementation which is of a type of recurrent neural network (RNN). It is proposed to use deep learning mechanisms in the unsupervised learning architecture using
-                        SpatioTemporal auto-encoder for performing the implementation of abnormal activity in the broadcasted video.</p>
-
-                    <p>In the next step, we will be training the machine learning model with the sample video of the bomb blast and gunshot happening videos. After a considerable number of epochs, the machine learning model will become capable to identify
-                        such events in the video which is getting recorded in the surveillance camera. Convolutional Neural Network(CNN) shall be involved in processing the image frames generated from the video blocks.</p>
-
-                    <p>On top of that, we will be using the written app logic to perform the intimation to the user group configured.</p>
+                <div class="content-inner">
+                    <h3>Mobile App</h3>
+                    <p>The mobile application is where the user performs the Check-in/out operation. We will be having a user interface, in which the user needs to select the check-in menu for logging in and select the checkout menu to log out. The app consumes
+                        the Flask API method for user employee face verification and Data Service API methods to make an entry for clock-in and clock-out.</p>
                 </div>
 
-                <div class="content-inner" data-aos="fade-up">
+                <div class="content-inner">
+                    <h3>Validation in the mobile App</h3>
+                    <p>Geofencing validation is required to ensure the employee is within the premises when they do Checkin/out. Due to the flexibility of manual changes to device clock time, we have to use true-time API/plug-in to calculate the actual time
+                        of the geolocation, instead of taking the mobile device time as a log-in time. To ensure, the employees are showing their real face in the phone camera, and not showing the taken photo to bypass the validation, the Deep Convolutional
+                        Neural Network can be used to differentiating between real live streaming video/image and a photo with a face.</p>
+                </div>
+                <div class="content-inner">
+                    <h3>Admin Dashboard</h3>
+                    <p>A Dashboard needs to be built, which shows the consolidated report on the employee’s availability and provide a detailed report specific to an employee.</p>
+                </div>
+
+                <div class="content-inner">
                     <h3>Result</h3>
-                    <p>With the proposed solution, we can accomplish an enhanced alert system for the public. This system will decrease the turn-around time required for taking up any countermeasure activities in the event of a bomb blast or gunshot.</p>
+                    <p>With the proposed solution, we can accomplish an enhanced employee attendance system with no major costs. All we need to spend is for the cloud environment to deploy our application. On the other hand, The application can be enhanced
+                        to include Customized attendance policies in the application feature.</p>
 
                 </div>
 
@@ -124,10 +124,10 @@
             </div>
             <div class="col-md-4 content-right" data-aos="fade-up">
                 <h4>Related Tags</h4>
-                <span class="badge badge-dark"><a>IOT</a></span>
-                <span class="badge badge-dark"><a>Security</a></span>
-                <span class="badge badge-dark"><a>Machine Learning</a></span>
-                <span class="badge badge-dark"><a>Chat Bot</a></span>
+                <span class="badge badge-dark"><a href="https://www.apptomate.co/technology/">IOT</a></span>
+                <span class="badge badge-dark"><a href="https://www.apptomate.co/technology/">Security</a></span>
+                <span class="badge badge-dark"><a href="https://www.apptomate.co/technology/">Machine Learning</a></span>
+                <span class="badge badge-dark"><a href="https://www.apptomate.co/technology/">Chat Bot</a></span>
 
                 <div class="mt-5" data-aos="fade-up">
                     <h4>Download Case study</h4>
@@ -140,18 +140,19 @@
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
                         <div class="carousel-inner">
+
                             <div class="carousel-item active">
-                                <img src="images/ml-bg.jpg" class="d-block w-100" alt="...">
+                                <img src="images/iot-bg.jpg" class="d-block w-100" alt="...">
                                 <div class="related-case">
-                                    <h4>Ml Algorithm and Face Recognition for Employee Attendance System</h4>
-                                    <span class="badge badge-dark"><a href="#">Read more...</a></span>
+                                    <h4>Bomb Blast or Gun Fire Alert System using IoT and Machine Learning</h4>
+                                    <span class="badge badge-dark"><a href="iot.html">Read more...</a></span>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/bot-bg.jpg" class="d-block w-100" alt="...">
                                 <div class="related-case">
                                     <h4>CUSBot voice enabled virtual waiter</h4>
-                                    <span class="badge badge-dark"><a href="#">Read more...</a></span>
+                                    <span class="badge badge-dark"><a href="cus-bot.html">Read more...</a></span>
                                 </div>
                             </div>
 
