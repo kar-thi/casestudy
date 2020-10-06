@@ -11,6 +11,7 @@
     <link rel="icon" href="https://www.apptomate.co/wp-content/uploads/2020/08/cropped-fav-black-1-1-32x32.png" sizes="32x32" />
     <link rel="icon" href="https://www.apptomate.co/wp-content/uploads/2020/08/cropped-fav-black-1-1-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="https://www.apptomate.co/wp-content/uploads/2020/08/cropped-fav-black-1-1-180x180.png" />
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
     <link rel="stylesheet" href="app.css">
     <title>apptomate: UI/UX Design, AI &amp; Machine Learning Development, DevOps Consulting, IoT App Development Company in India, USA, Germany &#8211; Global IT / Software Consulting &amp; Management Company in India, USA, Germany offers UI/UX design services,
         AI &amp; Machine learning development, RPA, DevOps consulting, IoT app development, mobile app development, web application development, eCommerce development services and more. For further business inquiries and clarifications, feel free to contact
@@ -19,10 +20,9 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transprent myNav">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/apptomate-black.png" style="width: 190px;" /></a>
+            <a class="navbar-brand" href="#"><img src="images/apptomate-white.png" style="width: 190px;" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,14 +53,14 @@
         </div>
     </nav>
     <div class="jumbotron" style="background-image: url('images/iot-bg.jpg');">
-        <h1 class="display-4">Bomb Blast or Gun Fire Alert System using IoT and Machine Learning</h1>
+        <h1 class="display-4" data-aos="fade-left">Bomb Blast or Gun Fire Alert System using IoT and Machine Learning</h1>
 
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-8 container-top">
-                <div class="content-inner">
+                <div class="content-inner" data-aos="fade-up">
                     <h3>Problem Statement</h3>
                     <p>The responsibility of providing enhanced solutions to ensure public safety has become significant throughout the world. Many instances are getting filed on the bomb blast, gun fires, etc, especially in public places like schools, shopping
                         malls, etc. In real-time, alerting the police or corresponding department in case of Bomb Blast or Gun Fire is not very instant which in turn impacts the time taken for performing the countermeasure activities. The recorded cases
@@ -69,13 +69,13 @@
                     </p>
                 </div>
 
-                <div class="content-inner">
+                <div class="content-inner" data-aos="fade-up">
                     <h3>Technical Solution</h3>
                     <p>Here I have proposed a hybrid solution that works with the combination of IoT devkit and Machine learning algorithms to ensure we develop the enhanced alert system for public safety. On top of that, given a brief of using a machine
                         learning algorithm for video surveillance to ensure the safeness.</p>
                 </div>
 
-                <div class="content-inner">
+                <div class="content-inner" data-aos="fade-up">
                     <h3>IoT with Machine Learning Solution</h3>
                     <p>Internet of Things(IoT) is a device connected to the Internet with the ability to collect and exchange data from users or environments with no human intervention. IoT allows objects to be sensed and controlled remotely across existing
                         network infrastructure, creating opportunities for more direct integration between the physical world and computer-based systems. In our solution, we have chosen the MXChip IoT DevKit, which can be used to develop and prototype
@@ -93,7 +93,7 @@
                         subscribed to by the IoT Hub so that the event will be triggered on any abnormal activity identified in the IoT devices connected with the Hub.</p>
                 </div>
 
-                <div class="content-inner">
+                <div class="content-inner" data-aos="fade-up">
                     <h3>Maximized Solution</h3>
                     <p>Creating an alert system, with just measuring the decibel levels won’t be an ideal solution all the time, as sometimes due to other environmental factors the sound level may increase or decrease. So involving stream analytics with
                         a machine learning model, helps us to perform the prediction which considers different factors for making the decision of the sound volume and raises the alert only in the case of abnormal activity.</p>
@@ -102,7 +102,7 @@
                 </div>
 
 
-                <div class="content-inner">
+                <div class="content-inner" data-aos="fade-up">
                     <h3>Video Surveillance Alert System Using Machine Learning Solution:</h3>
                     <p>CTo identify the abnormal activities in the video frames, it requires to relate the video frames in the past and the current to predict for the unprecedented activities in the video frame. Considering the nature of the required machine
                         learning model, Long Short-Term Memory (LSTM) shall be chosen for implementation which is of a type of recurrent neural network (RNN). It is proposed to use deep learning mechanisms in the unsupervised learning architecture using
@@ -114,7 +114,7 @@
                     <p>On top of that, we will be using the written app logic to perform the intimation to the user group configured.</p>
                 </div>
 
-                <div class="content-inner">
+                <div class="content-inner" data-aos="fade-up">
                     <h3>Result</h3>
                     <p>With the proposed solution, we can accomplish an enhanced alert system for the public. This system will decrease the turn-around time required for taking up any countermeasure activities in the event of a bomb blast or gunshot.</p>
 
@@ -122,19 +122,19 @@
 
 
             </div>
-            <div class="col-md-4 content-right">
+            <div class="col-md-4 content-right" data-aos="fade-up">
                 <h4>Related Tags</h4>
                 <span class="badge badge-dark"><a>IOT</a></span>
                 <span class="badge badge-dark"><a>Security</a></span>
                 <span class="badge badge-dark"><a>Machine Learning</a></span>
                 <span class="badge badge-dark"><a>Chat Bot</a></span>
 
-                <div class="mt-5">
+                <div class="mt-5" data-aos="fade-up">
                     <h4>Download Case study</h4>
                     <button type="button" class="btn btn-dark btn-md btn-block">Click here to download</button>
                 </div>
 
-                <div class="mt-5">
+                <div class="mt-5" data-aos="fade-up">
                     <h4>Related Case</h4>
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -208,6 +208,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
